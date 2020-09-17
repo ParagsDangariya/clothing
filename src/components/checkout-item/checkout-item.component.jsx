@@ -1,4 +1,4 @@
-import React from "./node_modules/react";
+import React from "react";
 import { connect } from "react-redux";
 
 import { clearItemFromCart } from "../../redux/cart/cart.actions";
@@ -20,7 +20,6 @@ const CheckoutItem = ({ cartItem, clearItem }) => {
     </div>
   );
 };
-
 const mapDispatchToProps = (dispatch) => ({
   clearItem: (item) => dispatch(clearItemFromCart(item)),
 });
